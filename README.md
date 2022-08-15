@@ -13,12 +13,12 @@ Now each icon can be imported individually as a Vue component:
 
 ```vue
 <script setup>
-import { EstatIcon } from 'estat-icons';
+import { LogoIcon } from 'estat-icons/dist/solid';
 </script>
 
 <template>
   <div>
-    <EstatIcon class="logo" />
+    <LogoIcon class="logo" />
     <p>...</p>
   </div>
 </template>
