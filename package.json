@@ -1,0 +1,49 @@
+{
+  "name": "estat-icons",
+  "version": "1.0.0",
+  "description": "estat.pro icons",
+  "files": [
+    "dist/outline",
+    "dist/roles",
+    "dist/socials",
+    "dist/solid",
+    "dist/icons",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:icons && npm run build:js",
+    "build:js": "node ./src/build.js",
+    "build:icons": "npm run build-outline && npm run build-roles && npm run build-socials && npm run build-solid",
+    "build-outline": "svgo --folder ./src/icons/outline -o ./dist/icons/outline",
+    "build-roles": "svgo --folder ./src/icons/roles -o ./dist/icons/roles",
+    "build-socials": "svgo --folder ./src/icons/socials -o ./dist/icons/socials",
+    "build-solid": "svgo --folder ./src/icons/solid -o ./dist/icons/solid"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estat-pro/icons.git"
+  },
+  "keywords": [
+    "icons",
+    "estat",
+    "lib"
+  ],
+  "author": "Rah Emil <013131@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estat-pro/icons/issues"
+  },
+  "homepage": "https://github.com/estat-pro/icons#readme",
+  "devDependencies": {
+    "@svgr/core": "^6.3.1",
+    "@vue/compiler-dom": "^3.2.37",
+    "camelcase": "^6.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.78.0",
+    "svgo": "^2.8.0"
+  },
+  "peerDependencies": {
+    "vue": ">= 3"
+  }
+}
