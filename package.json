@@ -1,6 +1,6 @@
 {
   "name": "estat-icons",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "estat.pro icons",
   "files": [
     "dist/outline",
@@ -15,10 +15,10 @@
     "build": "npm run build:icons && npm run build:js",
     "build:js": "node ./src/build.js",
     "build:icons": "npm run build-outline && npm run build-roles && npm run build-socials && npm run build-solid",
-    "build-outline": "svgo --folder ./src/icons/outline -o ./dist/icons/outline",
-    "build-roles": "svgo --folder ./src/icons/roles -o ./dist/icons/roles",
-    "build-socials": "svgo --folder ./src/icons/socials -o ./dist/icons/socials",
-    "build-solid": "svgo --folder ./src/icons/solid -o ./dist/icons/solid"
+    "build-outline": "svgo -f ./src/icons/outline -o ./dist/icons/outline",
+    "build-roles": "svgo -f ./src/icons/roles -o ./dist/icons/roles",
+    "build-socials": "svgo -f ./src/icons/socials -o ./dist/icons/socials",
+    "build-solid": "svgo -f ./src/icons/solid -o ./dist/icons/solid"
   },
   "repository": {
     "type": "git",
