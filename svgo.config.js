@@ -22,9 +22,15 @@ module.exports = {
       name: 'addAttributesToSVGElement',
       params: {
         attributes: [
-          'fill="currentColor"',
-          'aria-hidden="true"'
+          { currentColor: 'fill' },
+          { ariaHidden: true }
         ]
+      }
+    },
+    {
+      name: 'convertColors',
+      params: {
+        currentColor: true,
       }
     }
   ],
