@@ -45,5 +45,8 @@
   },
   "peerDependencies": {
     "vue": ">= 3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.19.6"
   }
 }
